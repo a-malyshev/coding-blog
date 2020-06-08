@@ -1,8 +1,14 @@
 ---
 title: 'No-name-yet'
-week: '#1'
-date: '2020-06-03'
+week: '#2'
+date: '2020-06-08'
 ---
+
+
+### Type-checking
+
+### Ty module
+
 
 ### Clippy
 **Current issues and questions:**
