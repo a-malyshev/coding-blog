@@ -12,9 +12,11 @@ What it brings:
 1. The faster compilation (through incremental compilation and better data structures);
 2. Faster execution time (through adding Rust specific optimizations before LLVM ones);
 
-- What is drop-flag? 
-	The hidden bit that specifies whether the struct or enum should be dropped. As far as I am concerned, it does not exist anymore in Rust because it implicitly used more memory than expected (take a look at Zeroing of Dropped values for more details).
-- MIR is a simple core, i.e. no function calls, for loops, matches, and more. But wait, how is it represented there?
+
+What is drop-flag? 
+The hidden bit that specifies whether the struct or enum should be dropped. As far as I am concerned, it does not exist anymore in Rust because it implicitly used more memory than expected (take a look at Zeroing of Dropped values for more details).
+
+MIR is a simple core, i.e. no function calls, for loops, matches, and more. But how is it represented there?
 In Control-Flow Graph structure. CFG is a set of blocks with edges between them, which show how the flow goes from one block to another. As well as MIR, LLVM IR has the same CFG structure.
 
 Why are some optimizations are made on MIR and not on HIR, for example? What are the reasons behind that?
